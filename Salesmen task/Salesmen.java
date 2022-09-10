@@ -1,0 +1,24 @@
+
+public class Salesmen 
+{
+	public String Name;
+	public int Sales;
+	public Salesmen(int Sales, String Name)
+	{
+		this.Name = Name;
+	this.Sales = Sales;
+	}
+	
+	 public void SalesmenList(String Name, int arr[])
+	{
+		this.Name = Name;
+		
+	}
+
+
+	
+	
+	
+}
+
+
