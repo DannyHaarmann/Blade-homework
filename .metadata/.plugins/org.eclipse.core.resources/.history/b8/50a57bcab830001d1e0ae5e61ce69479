@@ -1,0 +1,71 @@
+
+
+
+public class Driver 
+{
+	public static void main(String[] args)
+	{
+		
+		
+		
+		int arr[] = {3,1,6,8,8,12313,3123};
+		
+		bubbleSort(arr);
+		System.out.println("Salesmen complete");
+		for(int i = 0; i < arr.length;i++)
+		{
+			System.out.println(arr[i] + " ");
+		}
+		
+		
+		
+		Salesmen sales[] = new Salesmen[15];
+		sales[0] = new Salesmen(" bob", 713713);
+		sales[1] = new Salesmen(" chad", 84833);
+		sales[2] = new Salesmen(" glen", 713434);
+		sales[3] = new Salesmen(" ronald", 12345);
+		sales[4] = new Salesmen(" dunkin", 99999);
+		sales[5] = new Salesmen(" steve", 10000);
+		sales[6] = new Salesmen(" marshall", 200000);
+		sales[7] = new Salesmen(" owen", 2387232);
+		sales[8] = new Salesmen(" blade", 567275699);
+		sales[9] = new Salesmen(" rob", 4287634);
+		sales[10] = new Salesmen(" gene", 426834);
+		sales[11] = new Salesmen(" taylor", 4364311);
+		sales[12] = new Salesmen(" gwen", 111111);
+		sales[13] = new Salesmen(" harry", 69696);
+		sales[14] = new Salesmen(" mark", 71);
+		Salesmen result[] = Salesmen.TopFive(sales);
+		for(int i = 0; i < 15; i++)
+		{
+			System.out.println(sales[i]);
+		}
+		System.out.println(sales);
+		System.out.println( " The top five workers are : ");
+		for(int i = 0; i < 5; i++)
+		{
+			System.out.println(result[i]);
+		}
+	}
+
+	 public static void bubbleSort(int[] arr) 
+	 {  
+	        int n = arr.length;  
+	        int temp = 0;  
+	         for(int i=0; i < n; i++)
+	         {  
+	                 for(int j=1; j < (n-i); j++)
+	                 {  
+	                          if(arr[j-1] > arr[j])
+	                          {  
+	                                 //swap elements  
+	                                 temp = arr[j-1];  
+	                                 arr[j-1] = arr[j];  
+	                                 arr[j] = temp;  
+	                         }  
+	                          
+	                 }  
+	         }  
+	 }	
+	
+}

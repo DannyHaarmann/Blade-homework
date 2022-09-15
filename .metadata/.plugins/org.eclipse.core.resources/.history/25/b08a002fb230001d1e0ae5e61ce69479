@@ -1,0 +1,12 @@
+
+public class Salesmen 
+{
+	private String Name;
+	public int Sales;
+	
+	public Salesmen(String Name, int Sales)
+	{
+		this.Name = Name;
+		this.Sales = Sales;
+	}
+}

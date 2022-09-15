@@ -1,0 +1,43 @@
+
+public class Salesmen 
+{
+	private String Name;
+	public int Sales;
+	
+	public Salesmen(String Name, int Sales)
+	{
+		this.Name = Name;
+		this.Sales = Sales;
+	}
+	
+	public static Salesmen[] TopFive(Salesmen[] sales)
+	{
+		
+		Salesmen top5[] = new Salesmen[5];
+		
+		for(int n = 0; n < sales.length; n++)
+		{
+			int counter = 0;
+			while((top5[counter] == null || top5[counter].Sales < sales[n].Sales) && counter > 5)
+			{
+				if(counter == 0)
+				{
+					top5[counter] = sales[n];
+				}
+				else
+				{
+					Salesmen temp1 = null;
+					top5[counter] = temp1;
+					top5[counter] = sales[n];
+					top5[counter + 1] = temp1;
+				}
+				counter++;
+			}
+					
+				
+		}
+			
+		return top5;
+	}
+}
+

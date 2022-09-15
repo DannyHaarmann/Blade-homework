@@ -1,0 +1,14 @@
+
+
+
+public class Driver 
+{
+	public static void main(String[] args)
+	{
+		Salesmen bob = new Salesmen("bob", 13671);
+		System.out.println(bob.Sales);
+	}
+	
+	
+	
+}
